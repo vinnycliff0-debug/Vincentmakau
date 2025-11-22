@@ -9,8 +9,9 @@ import Contact from './components/sections/Contact'
 export default function App() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Header />
-      <main>
+      <main id="main-content">
         <Hero />
         <Features />
         <About />

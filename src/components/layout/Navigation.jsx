@@ -39,7 +39,7 @@ export default function Navigation(){
 
   return (
     <nav>
-      <ul className="hidden md:flex items-center gap-6 text-sm">
+      <ul className="hidden md:flex items-center gap-7.5 text-sm">
         <li><a className="hover:text-primary" href="#features">Features</a></li>
         <li><a className="hover:text-primary" href="#about">About</a></li>
         <li><a className="hover:text-primary" href="#contact">Contact</a></li>
