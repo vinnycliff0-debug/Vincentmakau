@@ -25,6 +25,20 @@ npx lighthouse http://localhost:5174 --output html --output-path ./screenshots/l
 
 Note: Running Lighthouse or Playwright inside this container may require additional packages (Chrome) — see the project README for guidance.
 
+Deployment (Vercel)
+- This project is ready to deploy to Vercel. Steps:
+
+1. Push your repository to GitHub (make sure commits are visible and representative of your work).
+2. Sign in to Vercel and import the GitHub repository.
+3. Set the framework to "Other" or let Vercel detect Vite. Build command: `npm run build`. Output directory: `dist`.
+4. Add any environment variables under Project Settings if needed.
+
+I included a `vercel.json` with a basic static-build configuration. After deploying, copy the live URL into the README under "Live Demo".
+
+Visual regression & CI notes
+- Install `playwright` and run `npm run screenshots` to capture pages. Accept baselines with `npm run visual:accept` then use `npm run test` to compare.
+
+
 Image credits
 - Hero image: "Team working" by Brooke Cagle on Unsplash — https://unsplash.com/photos/1526378720176-4f5f1f2b9d5b
 - Product Design image: Photo by Christina @ wocintechchat on Unsplash — https://unsplash.com/photos/1553877522
